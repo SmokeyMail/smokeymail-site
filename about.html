@@ -1,73 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Smokey Mail</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #e0f2f7, #c8e6c9);
-      color: #212121;
-    }
-    .btn-primary {
-      background-color: #4CAF50;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 9999px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .btn-primary:hover {
-      background-color: #66bb6a;
-      transform: translateY(-2px);
-    }
-    input[type="email"], textarea {
-      border: 1px solid #a5d6a7;
-      padding: 0.75rem;
-      border-radius: 0.5rem;
-      width: 100%;
-      box-sizing: border-box;
-      transition: border-color 0.3s ease;
-    }
-    input[type="email"]:focus, textarea:focus {
-      outline: none;
-      border-color: #4CAF50;
-      box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smokey Mail Services - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, #e0f2f7, #c8e6c9);
+            color: #212121;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover {
+            background-color: #66bb6a;
+            transform: translateY(-2px);
+        }
+        /* Navigation bar styling */
+        .navbar {
+            background-color: rgba(45, 55, 72, 0.9); /* Dark grey with slight transparency */
+            backdrop-filter: blur(5px); /* Frosted glass effect */
+        }
+    </style>
 </head>
 <body class="antialiased">
+    <!-- Navigation Bar -->
+    <nav class="navbar p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white">Smokey Mail</a>
+            <div class="space-x-4">
+                <a href="index.html" class="text-white hover:text-green-300 transition-colors duration-200">Home</a>
+                <a href="about.html" class="text-green-300 font-semibold">About Us</a>
+                <a href="pricing.html" class="text-white hover:text-green-300 transition-colors duration-200">Pricing</a>
+                <a href="contact.html" class="text-white hover:text-green-300 transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-  <nav class="bg-white shadow-md py-4">
-    <div class="container mx-auto px-4 flex justify-center space-x-8">
-      <a href="index.html" class="text-gray-700 hover:text-green-600 font-semibold">Home</a>
-      <a href="about.html" class="text-gray-700 hover:text-green-600 font-semibold">About</a>
-      <a href="pricing.html" class="text-gray-700 hover:text-green-600 font-semibold">Pricing</a>
-      <a href="contact.html" class="text-gray-700 hover:text-green-600 font-semibold">Contact</a>
-    </div>
-  </nav>
+    <!-- About Section -->
+    <section class="py-16 md:py-24 bg-white rounded-lg shadow-lg mx-4 md:mx-auto max-w-4xl mt-8 mb-8">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-8 text-gray-800">About Smokey Mail</h1>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Founded with a deep commitment to digital privacy and a love for the serene beauty of the Great Smoky Mountains, Smokey Mail emerged from the belief that everyone deserves a secure and private space for their online communications. In an era dominated by data harvesting and intrusive practices, we stand as a beacon of trust and reliability.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Our mission is simple: to provide an email service that prioritizes your privacy above all else. We are a U.S.-based company, independent from big tech conglomerates, ensuring that our operations are transparent and our focus remains solely on protecting your data. We don't scan your emails, we don't sell your information, and we don't compromise on security.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Just as the Smokies offer a sanctuary of natural beauty, Smokey Mail aims to offer a digital sanctuary for your most important conversations. Join us in reclaiming your digital freedom.
+            </p>
+            <a href="contact.html" class="btn-primary inline-block mt-12 text-lg font-semibold">Get in Touch</a>
+        </div>
+    </section>
 
-<section class="py-16 md:py-24 bg-white rounded-lg shadow-lg mx-4 md:mx-auto max-w-4xl">
-  <div class="container mx-auto px-4 text-center">
-    <h1 class="text-4xl font-bold mb-6 text-gray-800">About Us</h1>
-    <p class="text-lg text-gray-700 leading-relaxed mb-4">
-      Smokey Mail is a privacy-first email service designed for individuals and businesses who care about control, simplicity, and freedom from big tech.
-    </p>
-    <p class="text-lg text-gray-700 leading-relaxed">
-      We’re small, independent, and proud to be based in the United States — with no tracking, no ads, and no nonsense.
-    </p>
-  </div>
-</section>
-
-  <footer class="bg-gray-800 text-white py-8 mt-12">
-    <div class="container mx-auto px-4 text-center">
-      <p class="text-gray-400">&copy; 2025 Smokey Mail Services. All rights reserved.</p>
-      <p class="text-gray-400 text-sm mt-2">Built with privacy and nature in mind.</p>
-    </div>
-  </footer>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 Smokey Mail Services. All rights reserved.</p>
+            <p class="text-gray-400 text-sm mt-2">Built with privacy and nature in mind.</p>
+        </div>
+    </footer>
 </body>
 </html>
