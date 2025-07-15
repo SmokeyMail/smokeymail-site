@@ -3,38 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smokey Mail Services</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Smokey Mail Services - Private. Reliable. Yours.</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to override or extend Tailwind, and for nature theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Subtle nature-inspired gradient background */
+            background: linear-gradient(to bottom right, #e0f2f7, #c8e6c9); /* Light blue to light green */
+            color: #212121; /* Dark grey for good contrast */
+        }
+        /* Hero section background image for nature theme */
+        .hero-section {
+            background-image: url('https://placehold.co/1920x600/66bb6a/ffffff?text=Nature+Inspired+Background'); /* Placeholder for a nature image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        /* Overlay for better text readability on hero image */
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+        }
+        /* Custom button style for a natural, slightly earthy feel */
+        .btn-primary {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px; /* Fully rounded */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover {
+            background-color: #66bb6a; /* Lighter green on hover */
+            transform: translateY(-2px);
+        }
+        /* Ensure form elements have consistent styling */
+        input[type="email"],
+        textarea {
+            border: 1px solid #a5d6a7; /* Light green border */
+            padding: 0.75rem;
+            border-radius: 0.5rem; /* Rounded corners */
+            width: 100%;
+            box-sizing: border-box; /* Include padding in width */
+            transition: border-color 0.3s ease;
+        }
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #4CAF50; /* Green on focus */
+            box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2); /* Green glow */
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Smokey Mail</h1>
-        <p>Private. Reliable. Yours.</p>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="hero-section text-white py-20 md:py-32 relative">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">Smokey Mail</h1>
+            <p class="text-xl md:text-2xl mb-8">Private. Reliable. Yours. <br class="md:hidden">Embrace true digital freedom.</p>
+            <a href="#features" class="btn-primary inline-block text-lg font-semibold">Discover Privacy</a>
+        </div>
     </header>
-    <section class="features">
-        <h2>Why Choose Smokey Mail?</h2>
-        <ul>
-            <li>🛡️ End-to-End Privacy</li>
-            <li>📧 Custom Domains</li>
-            <li>📬 Webmail + IMAP Support</li>
-            <li>🇺🇸 Based in the U.S. – Not big tech</li>
-        </ul>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mx-4 md:mx-auto max-w-4xl -mt-16 relative z-20 mb-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Why Choose Smokey Mail?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1: End-to-End Privacy -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <span class="text-5xl mb-4">🛡️</span>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">End-to-End Privacy</h3>
+                    <p class="text-gray-600">Your communications are encrypted from sender to receiver, ensuring nobody can snoop.</p>
+                </div>
+                <!-- Feature 2: Custom Domains -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <span class="text-5xl mb-4">📧</span>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">Custom Domains</h3>
+                    <p class="text-gray-600">Use your own domain for a professional and personalized email address.</p>
+                </div>
+                <!-- Feature 3: Webmail + IMAP Support -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <span class="text-5xl mb-4">📬</span>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">Webmail + IMAP</h3>
+                    <p class="text-gray-600">Access your mail via our secure web interface or your favorite email client.</p>
+                </div>
+                <!-- Feature 4: Based in the U.S. – Not big tech -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <span class="text-5xl mb-4">🇺🇸</span>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">U.S. Based & Independent</h3>
+                    <p class="text-gray-600">We're not big tech. We're a small, dedicated team focused on your privacy.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="pricing">
-        <h2>Plans</h2>
-        <p>Starting at just <strong>$3/month</strong></p>
+
+    <!-- Privacy Philosophy Section -->
+    <section class="py-16 md:py-24 bg-green-50 rounded-lg shadow-lg mx-4 md:mx-auto max-w-4xl mb-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">Our Privacy Philosophy</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                At Smokey Mail, we believe your digital communications are your own. We are committed to providing a secure and private email service that respects your fundamental right to privacy. We don't scan your emails, sell your data, or compromise your trust.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Our infrastructure is built with privacy at its core, utilizing robust encryption and adhering to strict data protection principles. Choose Smokey Mail for peace of mind, knowing your conversations remain truly private.
+            </p>
+        </div>
     </section>
-   <section class="contact">
-  <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/movlqjga" method="POST">
-    <input type="email" name="email" placeholder="Your email" required>
-    <textarea name="message" placeholder="Your message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mx-4 md:mx-auto max-w-4xl mb-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">Simple & Transparent Plans</h2>
+            <p class="text-2xl text-gray-700 mb-6">Starting at just <strong class="text-green-600">$3/month</strong></p>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                We offer straightforward pricing with no hidden fees. Get the privacy and features you need without breaking the bank. Contact us for detailed plan information.
+            </p>
+            <a href="#contact" class="btn-primary inline-block mt-8 text-lg font-semibold">View Plans & Pricing</a>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2025 Smokey Mail Services</p>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-green-100 rounded-lg shadow-lg mx-4 md:mx-auto max-w-4xl mb-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Get in Touch</h2>
+            <form action="https://formspree.io/f/moqgrvlq" method="POST" class="max-w-md mx-auto">
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email:</label>
+                    <input type="email" name="email" id="email" placeholder="your@example.com" required class="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message:</label>
+                    <textarea name="message" id="message" rows="6" placeholder="Tell us how we can help..." required class="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full text-lg font-semibold">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 Smokey Mail Services. All rights reserved.</p>
+            <p class="text-gray-400 text-sm mt-2">Built with privacy and nature in mind.</p>
+        </div>
     </footer>
 </body>
 </html>
