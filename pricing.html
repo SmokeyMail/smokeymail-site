@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smokey Mail Pricing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e0f2f7, #c8e6c9);
+      color: #212121;
+    }
+    .btn-primary {
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .btn-primary:hover {
+      background-color: #66bb6a;
+      transform: translateY(-2px);
+    }
+    input[type="email"], textarea {
+      border: 1px solid #a5d6a7;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      width: 100%;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+    input[type="email"]:focus, textarea:focus {
+      outline: none;
+      border-color: #4CAF50;
+      box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <nav class="bg-white shadow-md py-4">
+    <div class="container mx-auto px-4 flex justify-center space-x-8">
+      <a href="index.html" class="text-gray-700 hover:text-green-600 font-semibold">Home</a>
+      <a href="about.html" class="text-gray-700 hover:text-green-600 font-semibold">About</a>
+      <a href="pricing.html" class="text-gray-700 hover:text-green-600 font-semibold">Pricing</a>
+      <a href="contact.html" class="text-gray-700 hover:text-green-600 font-semibold">Contact</a>
+    </div>
+  </nav>
+
+<section class="py-16 md:py-24 bg-white rounded-lg shadow-lg mx-4 md:mx-auto max-w-4xl">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl font-bold mb-6 text-gray-800">Simple, Transparent Pricing</h1>
+    <p class="text-xl text-gray-600 mb-6">Choose the plan that fits your needs.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 bg-gray-50 rounded-xl shadow text-center">
+        <h2 class="text-2xl font-semibold mb-2">Basic</h2>
+        <p class="text-green-600 text-xl font-bold mb-4">$3/mo</p>
+        <p>1 mailbox<br>1GB storage<br>Webmail + IMAP</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-xl shadow text-center border-2 border-green-400">
+        <h2 class="text-2xl font-semibold mb-2">Plus</h2>
+        <p class="text-green-600 text-xl font-bold mb-4">$5/mo</p>
+        <p>3 mailboxes<br>5GB storage<br>DNS setup support</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-xl shadow text-center">
+        <h2 class="text-2xl font-semibold mb-2">Business</h2>
+        <p class="text-green-600 text-xl font-bold mb-4">$10/mo</p>
+        <p>5+ mailboxes<br>10GB+ storage<br>Priority support</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-400">&copy; 2025 Smokey Mail Services. All rights reserved.</p>
+      <p class="text-gray-400 text-sm mt-2">Built with privacy and nature in mind.</p>
+    </div>
+  </footer>
+</body>
+</html>
